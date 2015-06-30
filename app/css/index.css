@@ -1,0 +1,150 @@
+html{
+	height: 100%
+}
+body{
+	height:100%;
+}
+.wrapper{
+	min-height:100%;
+	height:auto!important;
+	overflow:hidden;
+}
+.wrapper:after {
+	content: "";
+	height: 80px;
+	display: block;
+}
+.page-footer{
+	height: 80px;
+	margin: -80px auto 0px auto;
+}
+/*шапка*/
+
+.header{
+	width:100%;
+	margin-bottom:20px;
+}
+.header__main{
+	padding:20px 50px;
+	background-color:#ecf0f9;
+}
+.header__container{
+  min-width: 960px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo__box{
+	float:left;
+}
+.header__information{
+	float:right;
+}
+.header__navigation{
+
+}
+.header__connection-list{
+	margin :0;
+	padding: 0;
+	list-style: none;
+}
+.header__list{
+	list-style: none;
+	margin:0;
+}
+.header-list__item{
+	padding: 10px 20px;
+	display: inline-block;
+	background-color: #f7f7f7;
+}
+.header-list__item:hover{
+	cursor: pointer;
+	background-color:#dce6f0;
+}
+.header-list__item_current{
+	background-color: #00b6f9;
+}
+
+/*Конец шапки*/
+/*Начало контента*/
+.main__container{
+	max-width:1200px;
+	min-width:960px;
+	margin:0 auto;
+}
+.bread__crumbs__box{
+	float:left;
+}
+.bread__crumbs__list{
+	list-style: none;
+}
+.bread__crums__item{
+	display:inline-block;
+}
+.bread__crums__item:before{
+	content:" > ";
+}
+.bread__crums__item:first-child:before{
+	content:"";
+}
+.pages__selector__box{
+	float:left;
+}
+.pages__list__box{
+	float:right;
+}
+.pages__wrapper{
+	float:right;
+}
+.pages__list__box{
+	margin-left:10px;
+}
+.pages__list{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.pages__item{
+	display:inline-block;
+}
+
+/*Сайдбар*/
+.sidebar{
+	float:left;
+}
+.sidebar__list{
+	list-style:none;
+}
+.sidebar__trigger{
+
+	display:block;
+	width: 100px;
+	height: 30px;
+	background:#f5f5f5;
+	border:1px solid #ddd;
+	text-decoration: none;
+}
+.sidebar__inner-link{
+	text-decoration:none;
+}
+.sidebar__inner{
+	display:none;
+}
+
+/*/сайдбар*/
+/* основной контент*/
+.main__content{
+	float:right;
+	max-width: 960px;
+}
+.list__goods{
+	list-style: none;
+}
+/* /основной контент */
+.clearfix:before,
+.clearfix:after{
+	content:" ";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
