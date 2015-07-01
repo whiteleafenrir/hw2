@@ -35,7 +35,7 @@ body{
 
 }
 .header__main{
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 }
 .header__container{
   min-width: 960px;
@@ -43,12 +43,34 @@ body{
   margin: 0 auto;
 }
 .logo__box{
-	margin-top:30px;
+	margin-top: 26px;
 	float:left;
 }
 .header__information{
-	margin-top:30px;
+	margin-top: 21px;
 	float:right;
+}
+
+.connection__phone{
+	margin-bottom: 1px;
+}
+.connection-phone__second{
+	font-family: elektra_light_proregular,sans-serif;
+  	color: #5C7B98;
+	font-size:25px;
+
+}
+.nostylelink{
+	text-decoration: none;
+	color:#00B9FE;
+	font-size:16px;
+	vertical-align: top;
+	font-family:elektra_light_probold;
+}
+.connection__mail-link{
+	  color: #00B9FE;
+	  font-size: 17px;
+	  font-family: elektra_light_proregular,sans-serif;
 }
 .header__navigation{
 
@@ -68,7 +90,7 @@ body{
 .header-list__item{
 	position: relative;
 
-	padding: 12px 20px;
+	padding: 11px 13px 10px 23px;
 	display: inline-block;
 	background-color: #f7f7f7;
 	font-size: 14px;
@@ -76,6 +98,7 @@ body{
 .header-list__link{
 	text-decoration:none;
 	color:#5c7b98;
+	font-size: 15px;
 }
 .header-list__link_current{
 	color:#f7f7f7;
@@ -104,17 +127,7 @@ body{
 	border-bottom: 20px solid transparent;
 	transition: all .3s linear;
 }
-.header-list__link_current:after{
-	border-left: 14px solid #00b6f9;
-	z-index: 4;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 100%;
-	border-top: 20px solid transparent;
-	border-bottom: 20px solid transparent;
-	transition: all .3s linear;
-}
+
 .header-list__link_current:before{
   border-left: 14px solid #00b6f9;
   z-index: 5;
@@ -154,22 +167,12 @@ body{
 .header-list__item_current{
 	background-color: #00b6f9;
 }
-.header-list__item:hover .header-list__link:after{
-	border-left: 14px solid #dce6f0;
-	z-index: 4;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 100%;
-	border-top: 20px solid transparent;
-	border-bottom: 20px solid transparent;
-	transition: all .3s linear;
-}
+
 .header-list__item:hover .header-list__link:before{
   border-left: 14px solid #dce6f0;
   z-index: 5;
   margin-left: -1px;
-    content: '';
+   content: '';
   position: absolute;
   top: 0;
   left: 100%;
@@ -193,8 +196,17 @@ body{
 	padding:0;
 	list-style: none;
 }
+.bread__crums__item{
+	color:#5c7b98;
+}
 .page__link{
 	color:#33c7fe;
+	font-size: 15px;
+}
+.page-list__link{
+	color:#33c7fe;
+	font-size: 15px;
+	margin-left:4px;
 }
 .page__link_current{
 	text-decoration: none;
@@ -214,12 +226,18 @@ body{
 }
 .pages__list__box{
 	float:right;
-	margin-left:10px;
+	margin-left:23px;
 }
 .pages__wrapper{
 	float:right;
 }
-.pages__list__box{
+.pages__selector__select{
+	padding-right: 55px;
+	background: url(../img/select_bg.png) right no-repeat;
+	-webkit-appearance: none;
+	  -moz-appearance: none;
+	  -ms-appearance: none;
+	  color:#5c7b98;
 }
 .pages__list{
 	list-style:none;
@@ -230,7 +248,7 @@ body{
 	display:inline-block;
 }
 .navigation__block{
-	margin-bottom: 10px;
+	margin-bottom: 17px;
 }
 /*Сайдбар*/
 .sidebar{
@@ -242,7 +260,7 @@ body{
 	list-style:none;
 }
 .sidebar__trigger{
-	padding: 7px 115px 7px 10px;
+	padding: 6px 115px 6px 15px;
 	display:block;
 	width: 100px;
 	background:#f5f5f5;
@@ -291,15 +309,15 @@ body{
 	max-width: 740px;
 }
 .list__goods{
-	margin:0;
-	padding:0;
+  	margin: 0 0 80px 0;
+  	padding:0;
 	list-style: none;
 }
 .goods__item{
 	border: 1px outset;
-	margin-bottom: 10px;
-	padding: 15px 0;
-}
+  	margin-bottom: 16px;
+   	padding: 33px 0 15px 0;
+ }
 
 .goods__item:hover{
 	cursor:pointer;
@@ -313,7 +331,7 @@ body{
 }
 .description__box{
 	float:right;
-	width:500px;
+	width:535px;
 }
 .description__link{
 	color:#00b9fe;
@@ -323,23 +341,80 @@ body{
 	color:#5c7b98;
 }
 .shop-description__title{
+	font-family:"elektra_light_probold";
 	font-size:25px;
 	color:#67849f;
 }
 .shop-description__text__wrapper{
 	color:#728da6;
+
+}
+.shop-description__text{
+	margin-bottom: 10px;
+	  font-size: 15px;
 }
 /* /основной контент */
 /*footer*/
 .footer__logo{
 	float:left;
+	margin-top:100px; 
+}
+.footer__logo-img{
+	vertical-align: center;
 }
 .footer-list__block{
-	margin-left:50px;
+	margin-left:90px;
 	float:left;
+	margin-top: 60px;
 }
 .footer__socials{
+	margin-top:70px;
 	float:right;
+}
+.appstore__wrapper{
+	float:left;
+}
+.google-play__wrapper{
+	margin-left:5px;
+	float:left;
+}
+.upper-button{
+  display: none;
+  background: #00B9FE;
+  position: fixed;
+  right: 50px;
+  bottom: 250px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.upper-button:before{
+  content: '';
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  left: 50%;
+  margin-left: -3px;
+  top: -4px;
+  border-bottom-color: #00B9FE;
+}
+.upper-button:after{
+  bottom: 0;
+  border-bottom-color: #fff;
+  content: '';
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  left: 50%;
+  margin-left: -3px;
+}
+.other-socials__wrapper{
+	margin-left:15px;
+}
+.first-row__sosials{
+	margin-bottom:10px;
 }
 .about-shop__menu{
 	float:left;

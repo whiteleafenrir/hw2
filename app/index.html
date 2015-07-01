@@ -29,8 +29,11 @@
 					</div>
 					<div class="header__information">
 						<ul class="header__connection-list">
-							<li class="connection__phone">+7921 322 12 32</li>
-							<li class="connection__mail">manager@company.ru</li>
+							<li class="connection__phone">
+								<a href="tel:+79213221232" class="nostylelink">+7 (921)</a>
+								<span class="connection-phone__second"> 322 12 32</span>
+							</li>
+							<li class="connection__mail"><a href="mailto:manager@company.com" class ="connection__mail-link">manager@company.com</a></li>
 						</ul>
 					</div>
 				</div>
@@ -58,7 +61,7 @@
 				<div class="pages__wrapper clerfix">
 					<div class="pages__selector__box">
 						<form action="#" method="get">
-							<select name="type">
+							<select name="type" class="pages__selector__select">
 							    <option selected value="сеткой">Сеткой</option>
 							    <option value="линиями">Линиями</option>
 				  			</select>
@@ -66,12 +69,12 @@
 					</div>
 					<div class="pages__list__box">
 						<ul class="pages__list">	
-							<li class="pages__item"><a href="#" class="page__link page__link_current">1</a></li>
-							<li class="pages__item"><a href="#" class="page__link">2</a></li>
-							<li class="pages__item"><a href="#" class="page__link">3</a></li>
-							<li class="pages__item"><a href="#" class="page__link">4</a></li>
-							<li class="pages__item"><a href="#" class="page__link">5</a></li>
-							<li class="pages__item"><a href="#" class="page__link">Вce</a></li>
+							<li class="pages__item"><a href="#" class="page-list__link page__link_current">1</a></li>
+							<li class="pages__item"><a href="#" class="page-list__link">2</a></li>
+							<li class="pages__item"><a href="#" class="page-list__link">3</a></li>
+							<li class="pages__item"><a href="#" class="page-list__link">4</a></li>
+							<li class="pages__item"><a href="#" class="page-list__link">5</a></li>
+							<li class="pages__item"><a href="#" class="page-list__link">Вce</a></li>
 						</ul>
 					</div>
 				</div>
@@ -199,7 +202,7 @@
 						</li>
 						<li class="goods__item clearfix">
 							<div class="img__box">
-								<img src="img/wifi_adapter.png" alt="item">
+								<img class="goods__img" src="img/wifi_adapter.png" alt="item">
 							</div>
 							<div class="description__box">	
 								<div class="name_of_item"><a href="#" class="description__link">Apple Mac 27</a></div>
@@ -215,8 +218,8 @@
 						Пара слов о магазине
 					</div>
 					<div class="shop-description__text__wrapper">
-						<p class="shop-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p class="shop-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="shop-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+						<div class="shop-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 					</div>
 				</div>
 
@@ -230,7 +233,7 @@
 </div>
 <div class="page__footer">
 	<div class="footer__container clearfix">
-			<div class="footer__logo"><img src="img/logo_footer.png" alt="logo"></div>
+			<div class="footer__logo"><img class="footer__logo-img" src="img/logo_footer.png" alt="logo"></div>
 			<div class="footer-list__block clearfix">
 				<div class="about-shop__menu">
 					<ul class="footer__list">
@@ -260,7 +263,22 @@
 					</ul>
 				</div>
 			</div>
-			<div class="footer__socials"><img src="img/item.png" alt="logo"></div>
+			<div class="upper-button">Наверх</div>
+			<div class="footer__socials">
+				<div class="first-row__sosials clearfix">
+					<div class="appstore__wrapper">
+						<img src="img/appstore.png" alt="appstore social icon">
+					</div>
+					<div class="google-play__wrapper">
+						<img src="img/googleplay.png" alt="google play social icon">
+					</div>
+				</div>
+
+				<div class="other-socials__wrapper">
+					<img src="img/socials_slice.png" alt="socials">
+				</div>
+				
+			</div>
 	</div>
 </div>
 <!-- JS -->
