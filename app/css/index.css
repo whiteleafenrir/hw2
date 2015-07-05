@@ -31,7 +31,6 @@ body{
 
 .header{
 	width:100%;
-	margin-bottom:20px;
     background-color:#ecf0f9;
 
 }
@@ -81,7 +80,6 @@ body{
 	list-style: none;
 }
 .navigation{
-	margin-top:-55px;
 	margin-bottom:18px;
 }
 
@@ -89,10 +87,11 @@ body{
 	text-align:center;
 }
 .navigation__list{
+	margin:0;
+	padding:0;
 	display:inline-block;
 	list-style: none;
 	vertical-align: top;
-	zoom:1!ie;
 
 }
 .navigation__item{
@@ -100,13 +99,13 @@ body{
   margin-left: -13px;
 }
 .navigation__link{
-	background:url(/img/nav-item.png) no-repeat;
+	background:url(../img/nav-item.png) no-repeat;
 	padding-left:14px;
 	height: 42px;
 	display:block;
 }
 .navigation__text{
-	background:url(/img/nav-item.png) right 0 no-repeat;
+	background:url(../img/nav-item.png) right 0 no-repeat;
 	padding-right:16px;
 	height:42px;
 	text-align:center;
@@ -143,7 +142,7 @@ body{
 .content__options-select .selectbox__display-title{float:left;width:102px}
 .content__options-select .selectbox__title-text{line-height:27px;padding-left:11px;height:27px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
 .content__options-select .selectbox__display-btn{width:26px;float:left;height:27px;background:0 0;top:0;right:0;position:absolute}
-.content__options-select .selectbox__btn-icon{width:26px;height:27px;background:url(/img/select_bg.png) center center no-repeat}
+.content__options-select .selectbox__btn-icon{width:26px;height:27px;background:url(../img/select_bg.png) center center no-repeat}
 .content__options-select .selectbox__dropdown-item.selected .selectbox__item-link{background:#edecec}
 .content__options-select .selectbox__item-link{font-size:12px;line-height:14px;color:#686868;padding-left:13px;padding-top:5px;padding-bottom:5px;cursor:pointer;display:block}
 .content__options-select .selectbox__item-link:hover{background:#edecec}
@@ -202,14 +201,6 @@ body{
 .pages__wrapper{
 	float:right;
 }
-.pages__selector__select{
-	padding-right: 55px;
-	background: url(../img/select_bg.png) right no-repeat;
-	-webkit-appearance: none;
-	  -moz-appearance: none;
-	  -ms-appearance: none;
-	  color:#5c7b98;
-}
 .pages__list{
 	list-style:none;
 	margin:0;
@@ -259,7 +250,7 @@ body{
 .sidebar__inner-link{
 	margin:0;
   	padding: 6px 14px;
-  	background: url(/img/tr-r.png) 3px 9px no-repeat;
+  	background: url(../img/tr-r.png) 3px 9px no-repeat;
 	text-decoration:none;
 	color:#5c7b98;
 }
