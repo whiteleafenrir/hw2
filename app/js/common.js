@@ -1,38 +1,37 @@
+$(document).ready(function(){
+	if($(".content__options-select").length){
+		$(".content__options-select").simpleSelect();
+	}
+});
 ;var upperModule = (function (){
-	var init = function(){
-		_goUp();
-		_scroll();
-	},
-	upper=$('.upper-button'),
-	_scroll = function(){
-		$(window).on("scroll",_scrollCondition);
-	},
-	_scrollCondition = function(){
-		var scroll=$(document).scrollTop();
-		if(scroll>200){
-			upper.fadeIn();
+	var upper=$('.upper-button'),
+		_scroll = function(){
+			$(window).on("scroll",_scrollCondition);
+			_goUp();
+		},
+		_scrollCondition = function(){
+			var scroll=$(document).scrollTop();
+			if(scroll>200){
+				upper.fadeIn();
+				
+			} else {
+				upper.fadeOut();
+			}
+		},
+		_goUp = function(){
+			upper.on('click',function(){
+				$("html, body").animate({scrollTop:0});
+			});
+		};
 			
-		} else {
-			upper.fadeOut();
-		}
-	},
-	_goUp = function(){
-		upper.on('click',function(){
-			$("html, body").animate({scrollTop:0});
-		});
-	};
-		
 	return {
-		init: init
+		init: _scroll
 	};
 
 })();
 upperModule.init();
 ;var accardeon = (function (){
-	var init = function(){
-		_clickTrigger();
-	},
-	_clickTrigger = function(){
+	var	clickTrigger = function(){
 		$('.sidebar__trigger').on('click',function(e){
 			e.preventDefault();
 			var $this=$(this),
@@ -61,8 +60,9 @@ upperModule.init();
 	
 		
 	return {
-		init: init
+		init: clickTrigger
 	};
 
 })();
 accardeon.init();
+
